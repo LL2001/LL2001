@@ -1,0 +1,170 @@
+{
+	"services": [
+		{
+			"bindable": true,
+			"metadata": {
+				"provider": {
+					"name": "北京东方国信科技股份有限公司"
+				},
+				"osb_x": "user_cloudiip_iot",
+				"displayName": "Cloudiip-IoT"
+			},
+			"plan_updateable": true,
+			"plans": [
+				{
+					"metadata": {},
+					"schemas": {
+						"service_binding": {},
+						"service_instance": {
+							"create": {
+								"parameters": {
+									"$schema": "http://json-schema.org/draft-04/schema#",
+									"type": "object",
+									"properties": [
+										{
+											"code": "access_quota",
+											"max": 100000,
+											"defaultValue": "/v2/resource/access_quota",
+											"label": "接入配额",
+											"hiddenValue": null,
+											"type": "int",
+											"required": true,
+											"default": "/v2/resource/access_quota",
+											"min": 1,
+											"options": null,
+											"step": 1,
+											"elementType": "slider_block",
+											"verification": {
+												"reg": "^[1-9]\\d*$",
+												"tip": "必须为大于零的整数"
+											},
+											"selectOsbX": null
+										},
+										{
+											"code": "point_quota",
+											"max": 100000,
+											"defaultValue": "/v2/resource/point_quota",
+											"label": "测点配额",
+											"hiddenValue": null,
+											"type": "int",
+											"required": true,
+											"default": "/v2/resource/point_quota",
+											"min": 1,
+											"options": null,
+											"step": 1,
+											"elementType": "slider_block",
+											"verification": {
+												"reg": "^[1-9]\\d*$",
+												"tip": "必须为大于零的整数"
+											},
+											"selectOsbX": null
+										},
+										{
+											"code": "device_quota",
+											"max": 100000,
+											"defaultValue": "/v2/resource/device_quota",
+											"label": "设备配额",
+											"hiddenValue": null,
+											"type": "int",
+											"required": true,
+											"default": "/v2/resource/device_quota",
+											"min": 1,
+											"options": null,
+											"step": 1,
+											"elementType": "slider_block",
+											"verification": {
+												"reg": "^[1-9]\\d*$",
+												"tip": "必须为大于零的整数"
+											},
+											"selectOsbX": null
+										}
+									]
+								}
+							},
+							"update": {
+								"parameters": {
+									"$schema": "http://json-schema.org/draft-04/schema#",
+									"type": "object",
+									"properties": [
+										{
+											"code": "access_quota",
+											"max": 100000,
+											"defaultValue": "/v2/resource/access_quota/{instance_id}",
+											"label": "接入配额",
+											"hiddenValue": null,
+											"type": "int",
+											"required": true,
+											"default": "/v2/resource/access_quota/{instance_id}",
+											"min": 1,
+											"options": null,
+											"step": 1,
+											"elementType": "slider_block",
+											"verification": {
+												"reg": "^[1-9]\\d*$",
+												"tip": "必须为大于零的整数"
+											},
+											"selectOsbX": null
+										},
+										{
+											"code": "point_quota",
+											"max": 100000,
+											"defaultValue": "/v2/resource/point_quota/{instance_id}",
+											"label": "测点配额",
+											"hiddenValue": null,
+											"type": "int",
+											"required": true,
+											"default": "/v2/resource/point_quota/{instance_id}",
+											"min": 1,
+											"options": null,
+											"step": 1,
+											"elementType": "slider_block",
+											"verification": {
+												"reg": "^[1-9]\\d*$",
+												"tip": "必须为大于零的整数"
+											},
+											"selectOsbX": null
+										},
+										{
+											"code": "device_quota",
+											"max": 100000,
+											"defaultValue": "/v2/resource/device_quota/{instance_id}",
+											"label": "设备配额",
+											"hiddenValue": null,
+											"type": "int",
+											"required": true,
+											"default": "/v2/resource/device_quota/{instance_id}",
+											"min": 1,
+											"options": null,
+											"step": 1,
+											"elementType": "slider_block",
+											"verification": {
+												"reg": "^[1-9]\\d*$",
+												"tip": "必须为大于零的整数"
+											},
+											"selectOsbX": null
+										}
+									]
+								}
+							}
+						}
+					},
+					"name": "物联平台项目",
+					"description": "Shared fake Server, 5tb persistent disk, 40 max concurrent connections",
+					"id": "Cloudiip-IoT-01-Plan-01",
+					"free": true
+				}
+			],
+			"name": "Cloudiip-IoT物联平台",
+			"description": "平台介绍。。。。",
+			"id": "Cloudiip-IoT-01",
+			"dashboard_client": {},
+			"tags": [
+				"cloudiip",
+				"iot",
+				"物联网",
+				"物联"
+			],
+			"requires": []
+		}
+	]
+}
